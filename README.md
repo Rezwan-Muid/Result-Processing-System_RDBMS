@@ -1,10 +1,10 @@
 # Result-Processing-System_RDBMS
 
-1.Project Background:
+1. Project Background:
 The main objective of this project is to demonstrate our knowledge on SQL specially Oracle PL/SQL. With this end in view, we have done a heavy use of PL/SQL in our project.
 We have designed our project to both show our learning from the course and to implement a functional database system for result processing of students in the university.
 
-2.Project Description:
+2. Project Description:
 In our project there are in total 8 schema tables that are all inter-connected.  Associated with each table, there are procedures and triggers that smoothly update the marks and corresponding GPA's of students.
 We have used compound triggers that were recently introduced in Oracle from version 11g to have our way around the mutating-table errors.
 The flow of our system is such that whenever the quiz or mid_semester or semester_final or attendance information of a particular student in a particular course are updated in their corresponding table, the total marks of that student are also updated automatically using triggers. And when all course marks have been updated, the total_gpa of that semester and also the CGPA is automatically updated using triggers.
